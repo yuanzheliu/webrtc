@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/thomas/webrtc/client/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/thomas/.gradle/caches/transforms-2/files-2.1/f7cd0d22a9a268b956f5243d2d50f9a1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
