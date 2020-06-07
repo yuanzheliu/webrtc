@@ -2,6 +2,8 @@
 
 ### 1. install React-native 
 
+also need: node.js 
+
 ### 2. clone repo
 
 ### 3. in ./server, run 
