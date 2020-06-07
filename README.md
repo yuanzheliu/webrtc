@@ -1,15 +1,15 @@
 # webrtc
 
-###1. install React-native 
+### 1. install React-native 
 
-###2. clone repo
+### 2. clone repo
 
-###3. in ./server, run 
+### 3. in ./server, run 
 $ npm install
 
 $ node app
 
-###4. in ./client, run
+### 4. in ./client, run
 
 $ npm install
 
