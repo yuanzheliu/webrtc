@@ -6,7 +6,7 @@ const options = {
   key: fs.readFileSync('./fake-keys/privatekey.pem'),
   cert: fs.readFileSync('./fake-keys/certificate.pem'),
 };
-const serverPort = (process.env.PORT || 4443);
+const serverPort = (process.env.PORT || 4460);
 const https = require('https');
 const http = require('http');
 let server;
@@ -63,7 +63,7 @@ function ioCallback(socket) {
   });
   
   socket.on('disconnect', () => {
-    console.log('disconnect');
+    console.log('disconnect',socket.id);
     
     if (socket.room) {
       let room = socket.room;

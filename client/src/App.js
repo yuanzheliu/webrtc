@@ -11,14 +11,14 @@ YellowBox.ignoreWarnings(['Setting a timer', 'Unrecognized WebSocket connection'
 /* ==============================
  Global variables
  ================================ */
-const url = 'http://192.168.1.3:4443';
-const socket = io.connect(url, { transports: ['websocket'] });
-const configuration = { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] };
-
-let pcPeers = {};
-let appClass;
-let localStream;
-
+ const url = 'http://192.168.1.3:4460';
+ const socket = io.connect(url, { transports: ['websocket'] });
+ const configuration = { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] };
+ 
+ let pcPeers = {};
+ let appClass;
+ let localStream;
+ 
 /* ==============================
  Class
  ================================ */
@@ -30,16 +30,20 @@ class App extends Component {
     isFront: true,
     streamURL: null,
     remoteList: {},
+    remoteURL: null,
+    debuginfo:"",
   };
   
   componentDidMount() {
     appClass = this;
+    
     getLocalStream();
   }
   
   switchCamera = () => {
-    localStream.getVideoTracks().forEach(track =>
-      track._switchCamera());
+    localStream.getVideoTracks().forEach(track => {
+      track._switchCamera();
+    });
   };
   
   onPress = () => {
@@ -47,7 +51,7 @@ class App extends Component {
       status: 'connect',
       info: 'Connecting',
     });
-    console.log('start join')
+    
     join(this.state.roomID);
   };
   
@@ -58,7 +62,7 @@ class App extends Component {
   );
   
   render() {
-    const { status, info, streamURL, remoteList } = this.state;
+    const { status, info, streamURL, remoteList,remoteURL,debuginfo} = this.state;
     
     return (
       <View style={container.style}>
@@ -68,6 +72,8 @@ class App extends Component {
         {this.button(this.switchCamera, 'Change Camera')}
         
         <RTCView streamURL={streamURL} style={rtcView.style}/>
+        <RTCView streamURL={remoteURL} style={rtcView.style}/>
+        <Text style={text.style}>{debuginfo}</Text>
         
         {
           mapHash(remoteList, (remote, index) => {
@@ -109,6 +115,7 @@ class App extends Component {
     .then(stream => {
       // Got stream!
       localStream = stream;
+
       appClass.setState({
         streamURL: stream.toURL(),
         status: 'ready',
@@ -126,13 +133,13 @@ class App extends Component {
 const join = roomID => {
   let onJoin = socketIds => {
     for (const i in socketIds) {
-      console.log(i)
       if (socketIds.hasOwnProperty(i)) {
         const socketId = socketIds[i];
         createPC(socketId, true);
       }
     }
   };
+  
   socket.emit('join', roomID, onJoin);
 };
 
@@ -179,13 +186,15 @@ const createPC = (socketId, isOffer) => {
    * On Add Stream (Deprecated)
    */
   peer.onaddstream = event => {
-    //console.log('onaddstream', event.stream);
+    console.log('onaddstream', event.stream);
     const remoteList = appClass.state.remoteList;
     
     remoteList[socketId] = event.stream.toURL();
     appClass.setState({
       info: 'One peer join!',
       remoteList: remoteList,
+      remoteURL:event.stream.toURL(),
+      debuginfo :event.stream.toURL(),
     });
   };
   
