@@ -22,3 +22,4 @@ in another console:
 $ npx react-native run-android
 
 reference: https://github.com/DimitrisTzimikas/RCTWebRTCDemo2
+https://github.com/developerajendra/react-native-webrtc-demo
