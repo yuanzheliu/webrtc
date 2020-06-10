@@ -8,7 +8,6 @@ export default function WEBRtc({ roomNumber }) {
   const [remoteStream, setRemoteStream] = useState();
 
   let isCaller, peerConnection;
-  // const socket = io("https://desolate-earth-25164.herokuapp.com/");
   const socket = io("http://192.168.1.3:4460");
   
   const constraints = {

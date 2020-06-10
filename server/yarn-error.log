@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/thomas/Android/Sdk/emulator:/home/thomas/Android/Sdk/tools:/home/thomas/Android/Sdk/tools/bin:/home/thomas/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  8.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/thomas/webrtc/server/package.json: Unexpected token } in JSON at position 256
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "react-native-webrtc-server",
+    "version": "0.0.1",
+    "description": "react-native-webrtc server",
+    "main": "server.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "socket.io": "^2.3.0",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
