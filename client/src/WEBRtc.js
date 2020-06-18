@@ -11,9 +11,11 @@ export default function WEBRtc({ roomNumber }) {
   const socket = io("http://192.168.1.3:4460");
   
   const constraints = {
-    audio: false,
+    audio: true,
     video: true
   };
+
+
 
   /**
    * Getting ready for local stream 
@@ -53,7 +55,6 @@ export default function WEBRtc({ roomNumber }) {
         { 'urls': 'stun:stun.l.google.com:19302' }
       ]
     };
-    https://github.com/developerajendra/react-native-webrtc-demo
 
     socket.on('ready', room => {
       if (isCaller) {
@@ -150,11 +151,21 @@ export default function WEBRtc({ roomNumber }) {
 
   }, [localStream, remoteStream]);
 
+  /**
+   *  Utility functions
+   */
+  const switchCamera = () => {
+    console.log('switching cam');
+    localStream.getVideoTracks().forEach(track => track._switchCamera());
+  };
+
+
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.streamContainer}>
         <View style={styles.streamWrapper}>
-          <View style={styles.localStream}>
+          <View style={styles.rtcview}>
             {localStream && <RTCView style={styles.rtc} streamURL={localStream.toURL()} />}
             {!localStream && <Button title="Tap to start" onPress={startLocalStream} />}
           </View>
@@ -162,30 +173,34 @@ export default function WEBRtc({ roomNumber }) {
             {remoteStream && <RTCView style={styles.rtc} streamURL={remoteStream.toURL()} />}
           </View>
         </View>
+        <View style = {styles.buttonLine}>
+          {localStream && <Button style={styles.buttons} title="Camera" onPress={switchCamera} />}
+        </View>
         {/* {!!remoteStream ? <Button style={styles.toggleButtons} title="Click to stop call" onPress={closeStreams} disabled={!remoteStream} /> : localStream && <Button title="Click to start call" onPress={startCall}  />} */}
       </View>
     </SafeAreaView>
   );
 }
 
+
+
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#313131',
-    justifyContent: 'space-between',
+    backgroundColor: 'white',
+    // justifyContent: 'space-between',
     alignItems: 'center',
     height: '100%',
     width: '100%'
   },
   streamContainer: {
-    backgroundColor: 'grey',
-    // justifyContent: 'space-around',
+    backgroundColor: 'white',
     alignItems: 'center',
-    height: '50%',
+    height: '30%',
     width: '100%',
     flexDirection: 'column'
   },
   streamWrapper: {
-    backgroundColor: 'grey',
+    backgroundColor: 'white',
     justifyContent: 'space-around',
     alignItems: 'center',
     height: '100%',
@@ -198,23 +213,29 @@ const styles = StyleSheet.create({
   },
   rtcview: {
     width: '45%',
-    height: '60%',
-    borderColor: '#ccc',
-    borderWidth: 3,
-
+    height: '100%',
+    // borderColor: '#ccc',
+    // borderWidth: 1,
+    // display: 'flex',
+    // alignItems: 'center',
+    // flexDirection: 'row',
+    // justifyContent: 'space-around',
   },
   rtc: {
     width: '100%',
     height: '100%',
   },
-  localStream: {
-    width: '45%',
-    height: '60%',
-    borderColor: '#ccc',
-    borderWidth: 3,
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  }
+  buttonLine:{
+    width: '100%',
+    height: '5%',
+  },
+  buttons:{
+    textAlign: 'center',
+    borderWidth: 1,
+    borderColor: 'black',
+    width: '10%',
+    margin: 10,
+    padding: 10,
+    borderRadius: 10,
+  },
 });

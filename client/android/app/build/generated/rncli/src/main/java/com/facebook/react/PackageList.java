@@ -11,9 +11,6 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-import com.webrtcmobile.BuildConfig;
-import com.webrtcmobile.R;
-
 // react-native-webrtc
 import com.oney.WebRTCModule.WebRTCModulePackage;
 

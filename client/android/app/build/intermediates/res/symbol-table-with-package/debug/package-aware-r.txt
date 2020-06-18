@@ -361,6 +361,7 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color catalyst_logbox_background
 color catalyst_redbox_background
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
@@ -632,7 +633,7 @@ id accessibility_hint
 id accessibility_label
 id accessibility_role
 id accessibility_state
-id accessibility_states
+id accessibility_value
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -876,6 +877,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string alert_description
 string app_name
+string button_description
 string catalyst_change_bundle_location
 string catalyst_copy_button
 string catalyst_debug
@@ -935,6 +937,7 @@ style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
+style Animation_Catalyst_LogBox
 style Animation_Catalyst_RedBox
 style AppTheme
 style Base_AlertDialog_AppCompat
@@ -1208,6 +1211,7 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_Catalyst
+style Theme_Catalyst_LogBox
 style Theme_Catalyst_RedBox
 style Theme_FullScreenDialog
 style Theme_FullScreenDialogAnimatedFade

@@ -5,9 +5,9 @@ INJECTED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xm
 INJECTED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml:1:1-24:12
 INJECTED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml:1:1-24:12
 MERGED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml:1:1-24:12
-MERGED from [hermes-debug.aar] /home/thomas/.gradle/caches/transforms-2/files-2.1/b88e83f49f76ece6bac87a008ba25e71/AndroidManifest.xml:2:1-7:12
+MERGED from [hermes-debug.aar] /home/thomas/.gradle/caches/transforms-2/files-2.1/4523a62b3dbda90517d5a45d0e2c5f01/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-webrtc] /home/thomas/webrtc/client/node_modules/react-native-webrtc/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.61.5] /home/thomas/.gradle/caches/transforms-2/files-2.1/24c9512f867d95118ef8251562f6387c/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.react:react-native:0.62.2] /home/thomas/.gradle/caches/transforms-2/files-2.1/5c94de9e07fc1c247339866368a4023b/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/thomas/.gradle/caches/transforms-2/files-2.1/f7cd0d22a9a268b956f5243d2d50f9a1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/e619aefd29f73326bd544a133500e9e9/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/82e6b4d6ef268ef2e11e2b367cce9b1e/AndroidManifest.xml:17:1-22:12
@@ -41,8 +41,9 @@ MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/thomas/.gradle/
 MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/82c6e57f4f2c4f3009da3f61f2cea510/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/6594480ff2c5e4bfe785ff08ac8c65e1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/db0a3adf5e35c5bdf2ab4dcc7e957233/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/306e005e000e8db2d3e342883dc26105/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.soloader:soloader:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/202968902a37650d52de2326a3d4197b/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/b0309410d92a6bb1ed8cfc22d2d3ff6b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:annotation:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/120b5cedf59757ed70d876532b9a12ef/AndroidManifest.xml:2:1-13:12
 INJECTED from /home/thomas/webrtc/client/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /home/thomas/webrtc/client/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /home/thomas/webrtc/client/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -103,14 +104,16 @@ application
 ADDED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml:14:3-22:17
 MERGED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml:14:3-22:17
 MERGED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml:14:3-22:17
-MERGED from [com.facebook.react:react-native:0.61.5] /home/thomas/.gradle/caches/transforms-2/files-2.1/24c9512f867d95118ef8251562f6387c/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.61.5] /home/thomas/.gradle/caches/transforms-2/files-2.1/24c9512f867d95118ef8251562f6387c/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.62.2] /home/thomas/.gradle/caches/transforms-2/files-2.1/5c94de9e07fc1c247339866368a4023b/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.62.2] /home/thomas/.gradle/caches/transforms-2/files-2.1/5c94de9e07fc1c247339866368a4023b/AndroidManifest.xml:11:5-20
 MERGED from [androidx.core:core:1.0.1] /home/thomas/.gradle/caches/transforms-2/files-2.1/feae1eaa94fa4c3d45114dba24c23607/AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.1] /home/thomas/.gradle/caches/transforms-2/files-2.1/feae1eaa94fa4c3d45114dba24c23607/AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/60067f9ccf054edbb894e45349e864d9/AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/60067f9ccf054edbb894e45349e864d9/AndroidManifest.xml:22:5-23:19
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/306e005e000e8db2d3e342883dc26105/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/306e005e000e8db2d3e342883dc26105/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/202968902a37650d52de2326a3d4197b/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/202968902a37650d52de2326a3d4197b/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:annotation:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/120b5cedf59757ed70d876532b9a12ef/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:annotation:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/120b5cedf59757ed70d876532b9a12ef/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] /home/thomas/.gradle/caches/transforms-2/files-2.1/feae1eaa94fa4c3d45114dba24c23607/AndroidManifest.xml:22:18-86
 	android:label
@@ -165,12 +168,12 @@ uses-sdk
 INJECTED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/thomas/webrtc/client/android/app/src/main/AndroidManifest.xml
-MERGED from [hermes-debug.aar] /home/thomas/.gradle/caches/transforms-2/files-2.1/b88e83f49f76ece6bac87a008ba25e71/AndroidManifest.xml:5:5-44
-MERGED from [hermes-debug.aar] /home/thomas/.gradle/caches/transforms-2/files-2.1/b88e83f49f76ece6bac87a008ba25e71/AndroidManifest.xml:5:5-44
+MERGED from [hermes-debug.aar] /home/thomas/.gradle/caches/transforms-2/files-2.1/4523a62b3dbda90517d5a45d0e2c5f01/AndroidManifest.xml:5:5-44
+MERGED from [hermes-debug.aar] /home/thomas/.gradle/caches/transforms-2/files-2.1/4523a62b3dbda90517d5a45d0e2c5f01/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-webrtc] /home/thomas/webrtc/client/node_modules/react-native-webrtc/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webrtc] /home/thomas/webrtc/client/node_modules/react-native-webrtc/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.5] /home/thomas/.gradle/caches/transforms-2/files-2.1/24c9512f867d95118ef8251562f6387c/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.5] /home/thomas/.gradle/caches/transforms-2/files-2.1/24c9512f867d95118ef8251562f6387c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.62.2] /home/thomas/.gradle/caches/transforms-2/files-2.1/5c94de9e07fc1c247339866368a4023b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.62.2] /home/thomas/.gradle/caches/transforms-2/files-2.1/5c94de9e07fc1c247339866368a4023b/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/thomas/.gradle/caches/transforms-2/files-2.1/f7cd0d22a9a268b956f5243d2d50f9a1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/thomas/.gradle/caches/transforms-2/files-2.1/f7cd0d22a9a268b956f5243d2d50f9a1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/e619aefd29f73326bd544a133500e9e9/AndroidManifest.xml:20:5-44
@@ -237,10 +240,12 @@ MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/thomas/.grad
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/6594480ff2c5e4bfe785ff08ac8c65e1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/db0a3adf5e35c5bdf2ab4dcc7e957233/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/db0a3adf5e35c5bdf2ab4dcc7e957233/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/306e005e000e8db2d3e342883dc26105/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/306e005e000e8db2d3e342883dc26105/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/202968902a37650d52de2326a3d4197b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/202968902a37650d52de2326a3d4197b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/b0309410d92a6bb1ed8cfc22d2d3ff6b/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/b0309410d92a6bb1ed8cfc22d2d3ff6b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:annotation:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/120b5cedf59757ed70d876532b9a12ef/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:annotation:0.8.0] /home/thomas/.gradle/caches/transforms-2/files-2.1/120b5cedf59757ed70d876532b9a12ef/AndroidManifest.xml:7:5-9:41
 INJECTED from /home/thomas/webrtc/client/android/app/src/debug/AndroidManifest.xml
 INJECTED from /home/thomas/webrtc/client/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
