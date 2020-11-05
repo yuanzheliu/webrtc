@@ -16,22 +16,22 @@ https://github.com/nodesource/distributions/blob/master/README.md
 ### 2. Start the signaling server 
 
 in ./server, run 
-$ npm install
+`$ npm install
 
-$ node app
+$ node app`
 
 ### 3. Start Android application
 First connect an Android device with the PC. Make sure the device's debugging mode is turned on.
 
 Start react-native development framework: in ./client, run
 
-$ npm install
+`$ npm install
 
-$ npx react-native start
+$ npx react-native start`
 
 Compile the app and burn into the device: in another console:
 
-$ npx react-native run-android
+`$ npx react-native run-android`
 
 # Usage
 
