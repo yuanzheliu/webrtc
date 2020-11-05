@@ -25,9 +25,9 @@ First connect an Android device with the PC. Make sure the device's debugging mo
 
 Start react-native development framework: in ./client, run
 
-`$ npm install
+`$ npm install`
 
-$ npx react-native start`
+`$ npx react-native start`
 
 Compile the app and burn into the device: in another console:
 
