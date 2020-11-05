@@ -37,4 +37,12 @@ Compile the app and burn into the device: in another console:
 
 Now you can initializa the framework in your browser. In this framework, a signal server is created. You can access the server with the port specified in the server file. You will be asked to input a room name. One other user can enter the room by entering the same name.
 
-Use the callback function in the low-level java library to coordinate with translation API. Audio down-sampling may be needed. 
+ 
+
+# Description
++ The interfaces can be configured to show current audio transcript, select audio track, and enable text communication, API required tho.
+
++ Use the callback function in the low-level java library to coordinate with translation API. Audio down-sampling may be needed.
+
+
+
