@@ -8,7 +8,9 @@ A Realtime translation Framework using React Native, most framework are done wit
 ### 1. install React-native 
 Step-by-step installation guide can be found here
 https://reactnative.dev/docs/environment-setup
+
 also need: node.js 
+https://github.com/nodesource/distributions/blob/master/README.md
 
 ### 2. clone repo
 
