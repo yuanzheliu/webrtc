@@ -1,7 +1,13 @@
-# webrtc
+# RealtimeTranslationFramework
 
+A Realtime translation Framework using React Native, most framework are done with WebRTC module for React native. 
++ Support Android(tested)/Web/iOS
+
+
+# Usage
 ### 1. install React-native 
-
+Step-by-step installation guide can be found here
+https://reactnative.dev/docs/environment-setup
 also need: node.js 
 
 ### 2. clone repo
@@ -21,5 +27,3 @@ in another console:
 
 $ npx react-native run-android
 
-reference: https://github.com/DimitrisTzimikas/RCTWebRTCDemo2
-https://github.com/developerajendra/react-native-webrtc-demo
