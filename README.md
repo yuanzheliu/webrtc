@@ -5,27 +5,31 @@ A Realtime translation Framework using React Native, most framework are done wit
 
 
 # Installation
-### 1. install React-native 
+This guidline is base on Linux, connecting to Android client. 
+### 1. Install React-native 
 Step-by-step installation guide can be found here
 https://reactnative.dev/docs/environment-setup
 
 also need: node.js 
 https://github.com/nodesource/distributions/blob/master/README.md
 
-### 2. clone repo
+### 2. Start the signaling server 
 
-### 3. in ./server, run 
+in ./server, run 
 $ npm install
 
 $ node app
 
-### 4. in ./client, run
+### 3. Start Android application
+First connect an Android device with the PC. Make sure the device's debugging mode is turned on.
+
+Start react-native development framework: in ./client, run
 
 $ npm install
 
 $ npx react-native start
 
-in another console:
+Compile the app and burn into the device: in another console:
 
 $ npx react-native run-android
 
